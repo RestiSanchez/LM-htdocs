@@ -1,0 +1,76 @@
+/* Selector universal */
+
+* {
+    font-family: monospace;
+}
+
+/*Selector de tipos */
+
+strong {
+    color: purple;
+    font-size: large;
+
+}
+
+/*Selectores descendientes */
+/* Todos los 'a' que esten dentro de un 'p' */
+
+p a {
+    /*Esta es una regla restrictiva  */
+    color: yellow;
+
+}
+
+/* Nos saltamos los hijos directos */
+
+p * a {
+    color: darkred;
+}
+
+/* Solo afectamos a los hijos de primer nivel */
+p>a {
+    color: blue;
+}
+
+/**************************************************************
+*       SELECTORES DE CLASE
+**************************************************************/
+
+
+/* Estilo para strong muy importantes */
+
+strong.muy_importante {
+    color: red;
+    /* Es necesiario saber que cada etiqueta puede irse heredando de otra*/
+    font-weight: bold;
+    /* Es decir que pueden combinarse , se aplica de forma que la mas  */
+    font-size: x-large;
+    /* restrictiva se aplique primero antes que las mas generales */
+}
+
+.importante {
+    color: indigo;
+    font-weight: bold;
+
+}
+
+.amarillo {
+    color: yellow;
+
+}
+
+.letra_grande {
+    font-size: x-large;
+}
+
+.letra_verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Para modificar una etiqueta con id se pone una '#' ( Las id es mas prioritaria que una clase) */
+#pie {
+    color: gray;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

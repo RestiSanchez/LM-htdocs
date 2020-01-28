@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Posicionamiento</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="pablo"/>
+		<style>
+			#contenido-principal {width: 80%;margin: 0 auto;border: 1px solid #c0c0c0;}
+			#contenido-principal img {width: 80px;}
+			#apartado1{border: 3px solid; margin-top: 100px; background-color: lime;
+				height: auto;  /* Evitar los problemas de los left para que muestren el cajon escondido */
+				overflow: hidden;}		
+			#columna-derecha {width: 70%; border: 1px solid #ccc;
+			float: right;}
+			#columna-izquierda {width: 20%; border: 1px solid #ccc;
+				float: left;			}	
+			#verde {
+				float: right;
+			}
+			#amarillo {
+				float: right;
+			}
+			#azul {
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Propiedad float</h1>
+		<section id="contenido-principal">		
+			<img id="negro" src="images/pr_black.png" alt="power ranger negro"/>
+			<img id="amarillo" src="images/pr_amarillo.png" alt="power ranger amarillo"/>
+			<img id="verde" src="images/pr_verde.png" alt="power ranger verde"/>
+			<img id="rosa" src="images/pr_rosa.png" alt="power ranger rosa"/>
+			<img id="azul" src="images/pr_blue.png" alt="power ranger azul"/>
+		</section>
+
+
+		<div id="apartado1">
+			<div id="columna-izquierda">
+				<img id="cyberdyne" src="images/cyberdyne.png" alt="logo de cyberdyne" width="100">
+			</div>
+			<div id="columna-derecha">
+				<p>Problema típico cuando tienes un contenedor, y capas dentro que flotan. Alto del contenedor padre se pone a 0. . Problema típico cuando tienes un contenedor, y capas dentro que flotan. Alto del contenedor padre se pone a 0. Problema típico cuando tienes un contenedor, y capas dentro que flotan. Alto del contenedor padre se pone a 0. Problema típico cuando tienes un contenedor, y capas dentro que flotan. Alto del contenedor padre se pone a 0. Problema típico cuando tienes un contenedor, y capas dentro que flotan. Alto del contenedor padre se pone a 0. </p>
+			</div>			
+		</div>
+	</body> 
+</html>

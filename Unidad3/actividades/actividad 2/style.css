@@ -1,0 +1,91 @@
+/*********************************************************************
+*                         Actividad 1                                *
+*********************************************************************/
+
+/* Que todos los h1 y h2 (independientemente de dónde estén) usen fuente Arial.*/
+h1 , h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*2. Los h1 que cuelgan directamente del body, salgan rodeados de un borde de color
+(#1a8cff) de estilo sólido. Además, han de tener un ancho del 80%.*/
+body h1 {
+    border: solid #1a8cff;
+    border-width: 80%;
+}
+/*3. Los h1 que están dentro de la cabecera de cada artículo salgan de color #1a8cff, y con un
+borde inferior a rayas de un píxel de ancho y de color #c0c0c0.*/
+article h1 {
+   color:  #1a8cff;
+   border-bottom: 1px dashed #c0c0c0;
+   border-top: 0px hidden;
+   border-left: 1px hidden #c0c0c0;
+   border-right: 1px hidden #c0c0c0;
+
+}
+/*4. La sección principal de la página, tiene un ancho de un 80% de su contenedor, y un borde a
+todos los lados, sólido, de color #cacaca.*/
+article {
+    border: solid #cacaca;
+    width: 80%;
+}
+
+/*5. La fecha (que por cierto, es un párrafo dentro del header de un artículo), va con fuente de
+tamaño x-small, color gris (gray), y un ancho de 150px.*/
+header p {
+    font: x-small;
+    color: gray;
+    width: 150px;
+}
+
+/*6. El título de cada comentario, sea de tamaño 15px y color #1a8cff;*/
+article h2 {
+    font-size: 15px;
+    color: #1a8cff;
+}
+
+/*7. Los comentarios de la noticia tienen un ancho del 95% de su contenedor, y un borde sólido
+de color #cacaca.*/
+article.comentario {
+    border-left: 1px solid #cacaca;
+   border-right: 1px solid #cacaca;
+   border-bottom: 1px dashed #cacaca;
+    width: 95%;
+
+}
+
+
+/*8. La frase 5 comentarios debe ser de tamaño small (sin verse el resto de contenido del
+footer afectado)*/
+footer p {
+    
+    font: small;
+}
+ /*9. El footer de cada artículo tiene un borde superior punteado de 1 px y de color #c0c0c0.*/
+footer article {
+    border-top: 1px dotted #c0c0c0;
+   
+}
+
+section.contenido_articulo {
+    border-bottom: 1px dotted #cacaca;
+    
+}
+
+section.contenido_articulo p {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

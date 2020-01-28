@@ -1,0 +1,74 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title> Formularios HTML 5</title>
+        <meta name="author" content="Resti"/>
+        <meta name="keywors" content="Pequeña descripcion"/>
+        <meta charset="UTF-8"/>
+        <style>
+            input , select{
+                display: block;
+                margin-bottom: auto;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h1>Formularios HTML 5</h1>
+        
+        <form action="#" method="POST" >
+            <label for = "i-busqueda">Búsqueda</label> <br/>
+            <input type="search" id="i-busqueda" name="busqueda"> 
+            <!--required Sirve para obligar a rellenar el campo  -->
+            
+            <label for = "i-number" >Numeros</label>
+            <input id= "i-number" type="number" min="0" max="50" name = "numeros">
+
+            <label for = "i-rango" >Rango</label>
+            <input id= "i-rango" type="range" min="0" max="100" step="25" name = "numeros">
+
+            <label for = "i-hora" >Horas</label>
+            <input id= "i-hora" type="time" name = "hora">
+
+            <label for = "i-url" >URLS</label>
+            <input id= "i-url" type="url" name = "url">
+
+
+            <label for = "i-email" >Email</label>
+            <input id= "i-email" type="email" name = "email">
+
+            <label for = "i-fecha" >Fecha</label>
+            <input id= "i-fecha" type="date" name = "fecha">
+
+            <label for = "i-fechahora" >Fecha y Hora</label>
+            <input id= "i-fechahora" type="datetime-local" name = "fechahora">
+            <br/>
+
+            <select name="opciones" > Opciones
+                <option value = "o1">Opcion1</option>
+                <option value = "o2" selected>Opcion2</option>
+                <option value = "o3">Opcion3</option>
+            </select>
+
+            <label for="chk-recordar">Recordar credenciales</label>
+            <input type="checkbox" id="chk-recordar" checked>
+            
+
+
+
+            <br/>
+            <input type="submit" value="Enviar" >
+
+
+
+
+        </form>
+
+
+
+
+
+
+
+    </body>
+</html>

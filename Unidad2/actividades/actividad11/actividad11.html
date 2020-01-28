@@ -1,0 +1,156 @@
+<!DOCTYPE html xmlns PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Actividad 11 </title>
+        <meta name="author" content="Resti"/>
+        <meta name="keywors" content="Formularios"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <h1>Rellena tu CV</h1>
+
+        <form action="servidor_act11.php" method="GET"    target="_blank">
+
+            <fieldset>
+                <legend>Datos personales</legend>
+            <p><label for="provincia">Selecciona tu provincia : </label><select name="provincia" id="provincia">
+               
+                <option disabled = "disabled" selected = "selected">---Elija una provincia---</option>
+                <option value="" > A Coruña</option>
+                <option value=""> Álava</option>
+                <option value="">Albacete</option>
+                <option value="">Alicante</option>
+                <option value="">Almería</option>
+                <option value="">Asturias</option>
+                <option value="">Ávila</option>      
+                <option value="">Badajoz</option>
+                <option value="">Baleares</option>
+                <option value="">Barcelona</option>
+                <option value="">Burgos</option>
+                <option value="">Cáceres</option>
+                <option value="">Cádiz</option>
+                <option value="">Cantabria</option>
+                <option value="">Castellón</option>
+                <option value=""> Real</option>
+                <option value="">Córdoba</option>
+                <option value="">Cuenca</option>
+               <option value="">Girona</option>
+               <option value="">Granada</option>
+               <option value="">Guadalajara</option>
+               <option value="">Gipuzkoa</option>
+               <option value="">Huelva</option>
+               <option value="">Huesca</option>
+               <option value="">Jaén</option>
+               <option value="">La Rioja</option>
+              <option value="">Las Palmas</option>
+              <option value="">León</option>
+              <option value="">Lérida</option>
+              <option value="">Lugo</option>
+              <option value=""> Madrid</option>
+                <option value="">Málaga</option>
+                <option value="">Murcia</option>
+                <option value="">Navarra</option>
+                <option value="">Ourense</option>
+                <option value="">Palencia</option>
+                <option value="">Pontevedra</option>
+                <option value="">Salamanca</option>
+                <option value="">Segovia</option>
+                <option value="">Sevilla</option>
+                <option value="">Soria</option>
+                <option value="">Tarragona</option>
+                <option value="">Santa Cruz de Tenerife</option>
+                <option value="">Teruel</option>
+                <option value="">Toledo</option>
+                <option value="">Valencia</option>
+                <option value="">Valladolid</option>
+                <option value="">Vizcaya</option>
+                <option value="">Zamora</option>
+                <option value="">Zaragoza</option>
+            </select></p> </br>
+
+            <p> <label for = "dia" >Fecha de nacimiento : </label><select name ="dia_nac" id = "dia"  type = "number">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+
+
+
+            </select>
+
+
+            
+
+            <label for ="mes">de </label> <select name ="mes_nac" id="mes" >
+                <option value="">enero</option>
+                <option value="">febrero</option>
+                <option value="">marzo</option>
+                <option value="">abril</option>
+                <option value="">mayo</option>
+                <option value="">junio</option>
+                <option value="">julio</option>
+                <option value="">agosto</option>
+                <option value="">septiembre</option>
+                <option value="">octubre</option>
+                <option value="">noviembre</option>
+                <option value="">diciembre</option>
+                </select>
+            <label for = "anio">Año</label> <input type="number" name="anyo_nac" size="4" placeholder="Ingresa aqui el año" id="anio ">
+            </p>
+
+            <p>Temas de interés <select multiple name="temas[]" >
+                <option disabled ="disabled" selected = "selected">-----Elija una opcion-----</option>
+                <option value="">Administración de bases de datos</option>
+                <option value="">Programacion</option>
+                <option value="">Seguridad</option>
+            </select>
+            </p>
+        </fieldset>
+
+
+<br/>
+<br/>
+
+            <input type="submit" value="Enviar formulario">
+            <input type="reset" value="Limpiar">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <a href="../index.html">Actividades</a><br/>
+            
+            <a href="../../index.html">Unidad 2</a><br/>
+            <a href="../../../index.html">Inicio</a> 
+
+
+        </form>
+        
+    </body>
+</html>

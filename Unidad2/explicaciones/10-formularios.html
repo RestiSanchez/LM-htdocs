@@ -1,0 +1,36 @@
+<!DOCTYPE html xmlns PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Formularios</title>
+        <meta name="author" content="Resti"/>
+        <meta name="keywors" content="Expliacion Formularios"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+
+        <h2>Formulario con POST</h2>
+        <!--POST sirve para encubrir en la url los datos ingresados en el formulario -->
+
+        <form method="POST" action="http://192.168.21.109/unidad2/formularios/login1.php">
+            Nombre : </br>
+            <input type="text" name="usuario" placeholder="Ingresa aqui el nombre"/> 
+        <br/> <br/>
+        <input type="password" name="contrasenya"placeholder="Ingresa aqui la contraseña"/> 
+        <br/> <br/>
+        <input type="submit" value="Enviar" />
+        </form>
+        <!-- Con este metodo los datos registrados aparecen en la URL-->
+        <form method="GET" action="http://192.168.21.109/unidad2/formularios/login2.php">
+            Nombre : </br>
+            <input type="text" name="usuario" placeholder="Ingresa aqui el nombre"/> 
+        <br/> <br/>
+        <input type="password" name="contrasenya" placeholder="Ingresa aqui la contraseña"/> 
+        <br/> <br/>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar"/>
+        <input type="button" value="Un botón"/>
+        </form>
+
+    </body>
+</html>

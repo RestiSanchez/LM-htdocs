@@ -1,0 +1,102 @@
+<!DOCTYPE html xmlns PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Formularios 2</title>
+        <meta name="author" content="Resti"/>
+        <meta name="keywors" content="formularios 2"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <h1>Formularios 2</h1>
+        
+        <form method="POST"
+              action="http://192.168.21.109/unidad2/formularios/formulario2.php"
+              enctype="multipart/form-data">
+              
+            
+            <fieldset>
+                <legend>Datos personales
+                </legend>
+            <label for="nombre">Nombre : </label><br/>
+            <input id="nombre" type="text" name="nombre"/>
+            <br/> 
+            <label for="input_foto"> Foto : </label>
+            <br/> 
+            <!--Ingresar archivos al PHP  :> Type = "file" -->
+            <input id="input_foto" type="file" name="foto" value="Examinar archivos"/>
+            <br/>
+            <br/>
+            
+            </fieldset>
+            <fieldset>
+                <legend>Cosas de cine</legend>
+            <!-- CheckBox-->
+            Generos de cine favoritos: </br>
+            <!--PAra dejar marcada una opcion tienes que poner checked = "checked"-->
+            <input type="checkbox" name = "genero_comedia" id = "comedia" /><label for="comedia">Comedia</label><br/>
+            <input type="checkbox" name = "genero_accion" id = "accion"/><label for = "accion">Accion</label><br/>
+            <input type="checkbox" name = "genero_suspense" id = "suspense"/><label for="suspense">Suspense</label><br/>
+            <br/>
+            <br/>
+
+            <!--Radio button-->
+            <!--Debemos tener en name el MISMO NOMBRE debido a que si no lo tenemos-->
+            <!--podrias seleccionar varias opciones-->
+            ¿Comes palomitas en el cine?
+<br/>
+            <input type="radio" name="comer_palomitas" value="si"/> Si
+            <input type="radio" name="comer_palomitas" value="no"/> No
+            <input type="radio" name="comer_palomitas" value="no sabe"/> No sabe / No Contesta
+            <br/>
+            <br/>
+
+           
+            <input type = "submit" name="Enviar"/>
+            <input type="reset" name = "Limpiar" />
+
+            <br/>
+            <br/>
+            <!--Select-->
+            Elige tu cine favorito<br/>
+            <select name = "cine_favorito">
+                <!--Para que el Usuario no utilice la opcion predeterminada y pueda
+                elegir otra opcion posible -->
+                <option disabled="disabled" selected = "selected">Selecciona una opcion</option>
+                <option value="cine-alcampo">El del alcampo</option>
+                <option value = "cine-nuevo">El del CCT</option>
+                <option value = "cine-roquetas">El del Roquetas</option>
+                <option value = "cine-copo">El del copo</option>
+            </select>
+            
+            <!--Descripcion  textarea-->
+            <br/>
+            <br/>
+            Describe tu pelicula favorita: 
+            <textarea name="pelicula_favorita" rows="10" cols="60"> </textarea>
+            <br/>
+            <br/>
+            <!--Select multiple-->
+            Elige tu zona favorita para sentarte :
+            <br/>
+            <select multiple = "multiple" name="sitio_favorito">
+                <option value="principio">Al principio</option>
+                <option value="centro">En medio</option>
+                <option value="final">Al final</option>
+            </select>
+        </fieldset>
+        <br/>
+        <br/>
+
+        <input type = "submit" name="Enviar"/>
+        <input type="reset" name = "Limpiar" />
+            <!--Campos escondidos o hidden -->
+
+            <input type="hidden" name="id_usuario" value="cookie-12345"/>
+        </form>
+
+
+
+        <a href="../index.html">Unidad 2</a><br/>
+        <a href="../../index.html">Inicio</a></br/>
+    </body>
+</html>

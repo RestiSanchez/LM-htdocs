@@ -1,0 +1,81 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>Actividad 13</title>
+        <meta name="author" content="Resti"/>
+        <meta name="keywors" content="Pequeña descripcion"/>
+        <meta charset="UTF-8"/>
+        <style>
+            .salto {
+                display: block ;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>Formulario de alta de usuario</h2>
+        <form action="#" method="GET">
+
+        <label for="id-usuario">Identificador de nuevo usuario: </label>
+        <input type="text" id="id-usuario" name="id-usuario" maxlength="15" value="usu_012345" readonly>
+
+        <fieldset>
+            <legend>Datos identificativos</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" type="text" class="salto" required>
+
+            <label for="apellidos">apellidos</label>
+            <input id="apellidos" name="apellidos" type="text" class="salto" required>
+
+            Sexo<br/>
+            <input type="radio" name="sexos" id = "genero" value="hombre"><label for="genero">Varón</label>
+            <input type="radio" name="sexos" id = "genero2" checked value="mujer"><label for = "genero2">Mujer</label>
+            <br/>
+            <label for="fecha_nac">Fecha de nacimiento: </label>
+            <input type="date" name="fecha-nacimiento" id="fecha_nac" class="salto">
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" class="salto" placeholder="usuario@servidor.com" required >
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="pais">País : </label>
+            <select>
+                <option aria-placeholder="--Selecciona un pais">--Selecciona un pais</option>
+                <option>España</option>
+                 <option>Portugal</option>
+                <option>Francia</option>
+
+                    </select>
+
+                    <br/>
+            <label for="num_hijos" >Número de hijos: </label>
+            <input type="range" id="num_hijos" name="num_hijos" min="1" max="10" value="2" class="salto">
+
+            <br/>
+            <label for = "aficiones">Aficciones :</label> <br/>
+            <input type="checkbox" id="deporte" name="deporte"  ><label for="deporte">Deporte</label> <br/>
+            <input type="checkbox" id="lectura" name="lectura" checked  ><label for="lectura">Lectura</label> <br/>
+            <input type="checkbox" id="cine" name="cine" ><label for="cine">Cine</label> <br/>
+        
+
+            <label for = "comentario"   >Comentarios personales:</label>
+            <textarea name="comentarios" id="comentarios" class="salto" rows="5" cols="40">Escriba aquí sus comentarios...</textarea>
+            </textarea>
+
+
+        </fieldset>
+
+        <input type="submit"  value="Guardar datos">
+        <input type="reset" value="Reestablecer">
+            </form>
+        <br/>
+        <br/>
+        <a href="../index.html">Unidad 2</a> <br/>
+        <a href="../../index.html" > Inicio</a>
+    </body>
+</html>
